@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space Portfolio | Muhammad Talha BS Data Science</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <canvas id="stars"></canvas>
+    <div class="scroll-indicator"></div>
+    <header>
+        <nav>
+            <div class="brand">DATA VOYAGER</div>
+            <ul>
+                <li><a href="#about" class="active">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero" id="about">
+            <div class="hero-text">
+                <p>BS Data Science • FAST University</p>
+                <h1>Exploring galaxies of data to build insight-driven solutions.</h1>
+                <p>
+                    I build analytical models, interactive dashboards, and machine learning solutions that turn messy
+                    data into clear, actionable insights. I enjoy working at the intersection of statistics, programming,
+                    and storytelling—crafting results that are both accurate and easy to understand.
+                </p>
+                <div class="hero-actions">
+                    <a class="btn btn-primary" href="#" target="_blank" rel="noopener">Download Resume</a>
+                    <button class="btn btn-ghost" id="contactBtn">Open Comm Channel</button>
+                </div>
+                <div class="hero-badges">
+                    <span class="badge">Data Viz & ML</span>
+                    <span class="badge">Storytelling</span>
+                    <span class="badge">BS 2025–2029</span>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="metrics">
+                    <div class="metric-card">
+                        <span>25+</span>
+                        Data stories delivered
+                    </div>
+                    <div class="metric-card">
+                        <span>12</span>
+                        End-to-end ML experiments
+                    </div>
+                    <div class="metric-card">
+                        <span>4</span>
+                        Research collaborations
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills">
+            <h2>Mission Skills</h2>
+            <p>Toolset for navigating data nebulae and building intelligent systems.</p>
+            <div class="skills-grid">
+                <div class="skill-chip">
+                    <span class="skill-icon">🐍</span>
+                    <span>Python</span>
+                </div>
+                <div class="skill-chip">
+                    <span class="skill-icon">📊</span>
+                    <span>Pandas</span>
+                </div>
+                <div class="skill-chip">
+                    <span class="skill-icon">🗄️</span>
+                    <span>SQL & NoSQL</span>
+                </div>
+                <div class="skill-chip">
+                    <span class="skill-icon">🛰️</span>
+                    <span>HTML • CSS • JS</span>
+                </div>
+                <div class="skill-chip">
+                    <span class="skill-icon">🧠</span>
+                    <span>Machine Learning</span>
+                </div>
+                <div class="skill-chip">
+                    <span class="skill-icon">🔧</span>
+                    <span>Git & GitHub</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="education">
+            <h2>Education</h2>
+            <p>Journey through the academic constellations that forged the Data Voyager.</p>
+            <div class="education-grid">
+                <article class="edu-card">
+                    <div class="edu-logo">
+                        <img src="./images/Fast.png" alt="FAST University logo">
+                    </div>
+                    <div class="edu-details">
+                        <h3>FAST University</h3>
+                        <p class="degree">BS Data Science</p>
+                        <p class="timeframe">2025 – 2029 (Expected)</p>
+                        <p class="description">Focused on machine learning, statistical modeling, and big data technologies.</p>
+                    </div>
+                </article>
+
+                <article class="edu-card">
+                    <div class="edu-logo">
+                        <img src="./images/cedar.png" alt="Cedar College logo">
+                    </div>
+                    <div class="edu-details">
+                        <h3>Cedar College</h3>
+                        <p class="degree">A-Levels — Pre-Engineering</p>
+                        <p class="timeframe">2023 – 2025</p>
+                        <p class="description">Majored in Mathematics, Physics, Chemistry, and Computer Science.</p>
+                    </div>
+                </article>
+
+                <article class="edu-card">
+                    <div class="edu-logo">
+                        <img src="./images/habib.jpg" alt="Habib Public School logo">
+                    </div>
+                    <div class="edu-details">
+                        <h3>Habib Public School</h3>
+                        <p class="degree">O-Levels</p>
+                        <p class="timeframe">2015 – 2023</p>
+                        <p class="description">Built the foundation in problem solving, leadership, and teamwork.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Ready for joint missions, internships, or research collaborations.</p>
+            <div class="contact-card">
+                <div>
+                    <h3>Signal Details</h3>
+                    <p>Email: <a href="mailto:muhammad.talha0415@gmail.com">muhammad.talha0415@gmail.com</a></p>
+                    <p>Phone: +92 1231313133</p>
+                    <p>Location: Earth Orbit, Probably</p>
+                    <button class="btn btn-primary" id="copyEmail">Copy Email</button>
+                    <div class="social-links">
+                        <a class="btn btn-ghost icon-btn" href="https://github.com/Muhammad-Talha-25k2500/PF-Muhammad-Talha-25K-2500" target="_blank" rel="noopener">
+                            <svg viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M12 .5C5.648.5.5 5.648.5 12c0 5.088 3.292 9.395 7.865 10.923.575.105.785-.25.785-.555 0-.273-.01-1.18-.015-2.14-3.2.695-3.877-1.536-3.877-1.536-.523-1.33-1.277-1.685-1.277-1.685-1.045-.715.08-.7.08-.7 1.158.082 1.768 1.19 1.768 1.19 1.028 1.762 2.698 1.253 3.356.958.105-.744.402-1.254.732-1.542-2.554-.29-5.238-1.277-5.238-5.683 0-1.255.45-2.28 1.186-3.083-.119-.29-.514-1.456.113-3.04 0 0 .965-.309 3.164 1.177a10.95 10.95 0 0 1 2.882-.387c.978.004 1.963.132 2.882.387 2.198-1.486 3.161-1.177 3.161-1.177.629 1.584.234 2.75.115 3.04.738.803 1.185 1.828 1.185 3.083 0 4.417-2.689 5.389-5.256 5.673.413.355.781 1.053.781 2.124 0 1.534-.014 2.771-.014 3.149 0 .308.207.666.792.553C20.213 21.39 23.5 17.085 23.5 12c0-6.352-5.148-11.5-11.5-11.5Z"/>
+                            </svg>
+                            <span>GitHub</span>
+                        </a>
+                        <a class="btn btn-ghost icon-btn" href="https://www.instagram.com/_talha._.a/" target="_blank" rel="noopener">
+                            <svg viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 1.17.056 1.97.24 2.427.403a4.92 4.92 0 0 1 1.78 1.153 4.92 4.92 0 0 1 1.153 1.78c.163.457.347 1.257.403 2.427.058 1.266.07 1.646.07 4.85s-.012 3.584-.07 4.85c-.056 1.17-.24 1.97-.403 2.427a4.92 4.92 0 0 1-1.153 1.78 4.92 4.92 0 0 1-1.78 1.153c-.457.163-1.257.347-2.427.403-1.266.058-1.646.07-4.85.07s-3.584-.012-4.85-.07c-1.17-.056-1.97-.24-2.427-.403a4.92 4.92 0 0 1-1.78-1.153 4.92 4.92 0 0 1-1.153-1.78c-.163-.457-.347-1.257-.403-2.427C2.175 15.584 2.163 15.204 2.163 12s.012-3.584.07-4.85c.056-1.17.24-1.97.403-2.427a4.92 4.92 0 0 1 1.153-1.78 4.92 4.92 0 0 1 1.78-1.153c.457-.163 1.257-.347 2.427-.403C8.416 2.175 8.796 2.163 12 2.163Zm0 1.62c-3.14 0-3.507.012-4.74.068-.995.046-1.534.213-1.89.354-.476.185-.817.407-1.176.766-.359.359-.58.7-.766 1.176-.141.356-.308.895-.354 1.89-.056 1.233-.068 1.6-.068 4.74s.012 3.507.068 4.74c.046.995.213 1.534.354 1.89.185.476.407.817.766 1.176.359.359.7.58 1.176.766.356.141.895.308 1.89.354 1.233.056 1.6.068 4.74.068s3.507-.012 4.74-.068c.995-.046 1.534-.213 1.89-.354.476-.185.817-.407 1.176-.766.359-.359.58-.7.766-1.176.141-.356.308-.895.354-1.89.056-1.233.068-1.6.068-4.74s-.012-3.507-.068-4.74c-.046-.995-.213-1.534-.354-1.89a3.295 3.295 0 0 0-.766-1.176 3.296 3.296 0 0 0-1.176-.766c-.356-.141-.895-.308-1.89-.354-1.233-.056-1.6-.068-4.74-.068Zm0 3.789a4.428 4.428 0 1 1 0 8.857 4.428 4.428 0 0 1 0-8.857Zm0 7.308a2.88 2.88 0 1 0 0-5.76 2.88 2.88 0 0 0 0 5.76Zm5.527-7.5a1.035 1.035 0 1 1 0-2.07 1.035 1.035 0 0 1 0 2.07Z"/>
+                            </svg>
+                            <span>Instagram</span>
+                        </a>
+                    </div>
+                </div>
+                <form id="contactForm">
+                    <input type="text" placeholder="Call sign (Name)" required>
+                    <input type="email" placeholder="Comm channel (Email)" required>
+                    <textarea placeholder="Mission brief" required></textarea>
+                    <button type="submit" class="btn btn-ghost">Send Signal</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        © <span id="year"></span> Data Voyager — Crafting stellar datasets.
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
