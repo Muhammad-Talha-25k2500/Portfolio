@@ -363,15 +363,56 @@ footer {
     nav {
         flex-direction: column;
         gap: 1rem;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    main {
+        padding: 2.5rem 5vw 4rem;
+        gap: 3rem;
     }
 
     section {
-        padding: 2rem;
+        padding: 2rem 1.75rem;
+    }
+
+    .hero {
+        text-align: center;
+    }
+
+    .hero-actions {
+        justify-content: center;
+    }
+
+    .hero-badges {
+        justify-content: center;
+    }
+
+    .metrics {
+        grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    }
+
+    .skills-grid {
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    }
+
+    .education-grid,
+    .contact-card {
+        grid-template-columns: 1fr;
     }
 
     .edu-card {
         flex-direction: column;
         text-align: center;
         align-items: center;
+    }
+
+    .icon-btn {
+        width: 100%;
+        justify-content: center;
     }
 }
