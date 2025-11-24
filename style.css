@@ -17,12 +17,41 @@
 body {
     margin: 0;
     font-family: 'Segoe UI', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
-    background: radial-gradient(circle at 20% 20%, rgba(54, 209, 255, 0.2), transparent 50%),
-        radial-gradient(circle at 80% 0%, rgba(139, 111, 255, 0.25), transparent 55%), var(--bg);
+    background:
+        radial-gradient(circle at 20% 20%, rgba(54, 209, 255, 0.2), transparent 50%),
+        radial-gradient(circle at 80% 0%, rgba(139, 111, 255, 0.25), transparent 55%),
+        linear-gradient(135deg, #03040f, #040714 55%, #050f24);
     color: var(--text);
     min-height: 100vh;
     line-height: 1.6;
     overflow-x: hidden;
+    position: relative;
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.04) 0%, transparent 60%);
+    opacity: 0.4;
+    pointer-events: none;
+    z-index: -3;
+}
+
+body::after {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background: repeating-linear-gradient(
+        135deg,
+        rgba(255, 255, 255, 0.012) 0,
+        rgba(255, 255, 255, 0.012) 2px,
+        transparent 2px,
+        transparent 12px
+    );
+    opacity: 0.25;
+    pointer-events: none;
+    z-index: -3;
 }
 
 img {
@@ -35,7 +64,88 @@ canvas#stars {
     inset: 0;
     width: 100%;
     height: 100%;
+    z-index: -3;
+}
+
+.space-accent {
+    position: fixed;
+    width: 540px;
+    height: 540px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(54, 209, 255, 0.35), rgba(54, 209, 255, 0));
+    filter: blur(85px);
+    opacity: 0.55;
+    pointer-events: none;
     z-index: -2;
+    animation: drift 18s ease-in-out infinite alternate;
+}
+
+.nebula-one {
+    top: -10%;
+    left: -5%;
+}
+
+.nebula-two {
+    bottom: -5%;
+    right: -3%;
+    background: radial-gradient(circle, rgba(147, 112, 255, 0.4), rgba(147, 112, 255, 0));
+    animation-duration: 22s;
+}
+
+.orbit-lines {
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: -2;
+}
+
+.orbit-lines span {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    width: 600px;
+    height: 600px;
+    border: 1px dashed rgba(255, 255, 255, 0.08);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    animation: orbitPulse 30s linear infinite;
+}
+
+.orbit-lines span:nth-child(2) {
+    width: 780px;
+    height: 780px;
+    animation-duration: 42s;
+    animation-delay: 5s;
+}
+
+.orbit-lines span:nth-child(3) {
+    width: 980px;
+    height: 980px;
+    animation-duration: 55s;
+    animation-delay: 10s;
+}
+
+@keyframes drift {
+    from {
+        transform: translate3d(0, 0, 0) scale(1);
+    }
+    to {
+        transform: translate3d(30px, -20px, 0) scale(1.1);
+    }
+}
+
+@keyframes orbitPulse {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg);
+        opacity: 0.25;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg);
+        opacity: 0.25;
+    }
 }
 
 header {
